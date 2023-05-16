@@ -1,0 +1,38 @@
+.post_Container{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.post_Container img {
+height: 80%;
+width: 100%;
+object-fit: fill;
+}
+.post_Container h4{
+    font-size: 18px;
+    padding: 0px 10px;
+    color: #f09819;
+}
+.post_Container p{
+    font-size: 14px;
+    padding: 0px 10px;
+}
+.post_ERROR{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #898b8f;
+}
+@media screen and (max-width: 760px) {
+
+    .post_Container img {
+        height: 60%;
+    
+        }
+        .post_Container h4{
+            font-size: 14px;
+        }
+   
+}

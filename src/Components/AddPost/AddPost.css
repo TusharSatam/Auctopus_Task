@@ -1,0 +1,80 @@
+.addPost_Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.bgLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.7;
+}
+.addPost_InnerContainer {
+  height: 50vh;
+  width: 40vw;
+  background-color: white;
+  z-index: 2;
+border-radius: 5%;
+}
+.addPost_InnerContainer input,textarea{
+  margin: 10px 0px;
+  height: 2rem;
+  width: 70%;
+  padding-left: 10px;
+}
+.addPost_InnerContainer textarea{
+  height: 5rem;
+  resize: none;
+}
+
+.AddButton {
+  margin: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.AddButton:disabled {
+  background-image: linear-gradient(45deg, #938d8a 0%, #938e87  51%, #945548  100%);
+  cursor: not-allowed;
+}
+.AddButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.AddButton:active {
+  transform: scale(0.95);
+}
+.cancelButton{
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+.addPost_InnerContainer{
+  height: 80vh;
+  width: 80vw;
+}
+
+}

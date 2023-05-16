@@ -1,0 +1,38 @@
+.nav_Container{
+    word-wrap: break-word;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+.nav_Logo{
+    height: 80%;
+    width: 20vw;
+}
+.nav_Logo img{
+height: 100%;
+width: 100%;
+object-fit:fill;
+}
+.nav_Search{
+    width: 30%;
+}
+.nav_Search input {
+    border: none;
+    background-color: #F7F5F1;
+    height: 35px;
+    width: 80%;
+    border-radius: 2px 50px 2px 50px ;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 760px) {
+    .nav_Logo{
+        height: 60%;
+        width: 35vw;
+    }
+    .nav_Search{
+        width: 60%;
+    }
+}

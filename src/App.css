@@ -1,38 +1,92 @@
+body{
+  background-color:#F0F2F5; 
+scroll-behavior: smooth;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: 10vh 70vh 15vh;
+  grid-row-gap: 2vh;
+  grid-column-gap: 3vw;
+  grid-template-columns: 60vw 27vw;
+  width: 90vw;
+  height: 100vh;
+margin: 0px auto;
+background-color:#F0F2F5;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin: 0;
+  padding: 0;
 }
+.Navbar{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.postContainer{
+  height: 100%;
+  background-color: white;
+}
+.listContainer{
+  overflow-y: auto;
+  background-color: white;
+}
+.footerContainer{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: white;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.flexrowCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolCenter{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.flexrowSB{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+@media screen and (max-width: 760px) {
+  .postContainer{
+    /* display: none; */
+  }
+  .App{
+    width: 100vw;
+    height: 120vh;
+    /* min-height: 100vh; */
+    /* background-color: red; */
+    grid-template-columns: 90vw;
+  grid-template-rows: 10vh 50vh 300px 100px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 0;
+  grid-column-gap: 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  /* .Navbar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  } */
+
+.listContainer{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 300px;
+}
+.footerContainer{
+  
+}
 }

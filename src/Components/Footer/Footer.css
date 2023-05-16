@@ -1,0 +1,37 @@
+.footer_Container{
+ height: 100%;
+ width: 100%;   
+ 
+}
+.footer_section{
+    width: 100%;   
+
+}
+.social_button{
+/* color: white; */
+font-size: 1.4rem;
+margin: .1rem 1rem;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+.Newletter{
+    text-align: left;
+    color: #f09819;
+}
+.Newletter input{
+height: 2rem;
+width: 20rem;
+padding-left: 10px;
+border-radius: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 760px) {
+    .social_button{
+margin: .1rem .5rem;
+    }
+    .Newletter input{
+        height: 1.5rem;
+        width: 10rem; 
+    }
+}
